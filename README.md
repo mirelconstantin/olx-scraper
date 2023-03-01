@@ -21,7 +21,7 @@ py scraper.py
 ## 🤖 Install and run the Discord bot
 Optionally to make it easier to see all the details, also set up the discord bot.
 ```sh
-cd '.\discord bot\
+cd '.\bot\
 npm install
 npm run
 ```
