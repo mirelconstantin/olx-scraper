@@ -13,7 +13,7 @@ The scraper is designed specifically for the olx.ro platform, allows for easy ex
 
 ## 📦 Install and run the scraper
 ```sh
-cd scraper
+cd '.\scraper\
 pip install -r requirements.txt
 py scraper.py
 ```
@@ -33,17 +33,4 @@ npm run
 
 **The MIT License (MIT)**
 
-Copyright © 2019 Yago
-
-[usage]:https://github.com/yagop/node-telegram-bot-api/tree/master/doc/usage.md
-[examples]:https://github.com/yagop/node-telegram-bot-api/tree/master/examples
-[help]:https://github.com/yagop/node-telegram-bot-api/tree/master/doc/help.md
-[tutorials]:https://github.com/yagop/node-telegram-bot-api/tree/master/doc/tutorials.md
-[api-dev]:https://github.com/yagop/node-telegram-bot-api/tree/master/doc/api.md
-[api-release]:https://github.com/yagop/node-telegram-bot-api/tree/release/doc/api.md
-[api-experimental]:https://github.com/yagop/node-telegram-bot-api/tree/experimental/doc/api.md
-[contributing]:https://github.com/yagop/node-telegram-bot-api/tree/master/CONTRIBUTING.md
-[contributors]:https://github.com/yagop/node-telegram-bot-api/graphs/contributors
-[experimental]:https://github.com/yagop/node-telegram-bot-api/tree/master/doc/experimental.md
-[tg-channel]:https://telegram.me/node_telegram_bot_api
-[tg-group]:https://telegram.me/ntbasupport
+Copyright © 2023 Mirel Constantin
