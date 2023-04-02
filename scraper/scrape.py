@@ -26,18 +26,23 @@ def searchRents(city, type, url):
     listings = soup.find_all(class_='css-qfzx1y')
     links = ["https://olx.ro" + a['href'] for a in soup.find_all('a', {'class': 'css-rc5s2u'})]
 
-    for listing,link in zip(listings,links):
+    forbidden_keywords = ["militari residence", "ghencea", "ferentari"]
+
+    for listing, link in zip(listings, links):
         scrapedTitle = listing.find(class_='css-16v5mdi er34gjf0').text
         scrapedDate = listing.find(class_='css-veheph er34gjf0').text
         scrapedPrice = listing.find(class_='css-10b0gli er34gjf0').text
 
-        title = scrapedTitle
+        title = scrapedTitle.lower()
         location = scrapedDate.split(" - ")[0]
         price = scrapedPrice.split("€")[0]+"€"
         date = scrapedDate.split(" - ")[1]
         
         if "storia.ro" in link:
             link=link.split("https://olx.ro")[1]
+
+        if any(keyword in title for keyword in forbidden_keywords):
+            continue
 
         if "Reactualizat Azi la" in date:
             oldTime = date.split("la ")[1]
